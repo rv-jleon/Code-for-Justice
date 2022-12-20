@@ -6,7 +6,13 @@
 
 /* nav bar start */
 nav {
-    background: green;
+
+}
+
+.logo {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 ul {
@@ -32,10 +38,7 @@ a:hover {
 
 /* title start */
 h1 {
-    padding: 10px;
     text-align: center;
-    border: 3px solid green;
-    margin: 5%;
     font-size: 100px;
 }
 /* title end */
