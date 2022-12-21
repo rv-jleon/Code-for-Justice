@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -51,9 +53,31 @@ a:hover {
 }
 /* nav bar end */
 
-/* title start */
+/* title/hero img start */
 h1 {
+    background-image: url(home_img/hero.jpeg);
     text-align: center;
     font-size: 100px;
+    height: 300px;
 }
-/* title end */
+
+/* content start */
+.content1 {
+    background-color: black;
+    display: flex;
+}
+
+.contentimg {
+    height: 400px
+}
+
+.contenttext {
+    display: block;
+    margin: auto;
+}
+
+h2 , p {
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
