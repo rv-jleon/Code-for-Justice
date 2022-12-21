@@ -31,7 +31,6 @@ li {
     list-style: none;
     height: 50px;
     padding: 0px 10px;
-    
 }
 
 .homelink {
@@ -54,6 +53,10 @@ li {
     background-color: gold;
 }
 
+.homelink:hover , .explorelink:hover , .adoptlink:hover , .donatelink:hover , .helplink:hover {
+    background-color: black;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -62,6 +65,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: white;
 }
 /* nav bar end */
 
@@ -101,6 +105,10 @@ h1 {
     padding: 3%;
 }
 
+.contentDesc {
+    font-size: 20px;
+}
+
 /* cards start */
 .cardContainer {
     display: grid;
@@ -109,7 +117,7 @@ h1 {
 
 .card {
     background-color: black;
-    margin: 2%;
+    margin: 5%;
 }
 
 .cardIMG {
