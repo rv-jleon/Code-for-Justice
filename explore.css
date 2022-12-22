@@ -160,3 +160,37 @@ header h1 {
     padding: 20px;
 }
 
+
+/* phone screens  */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    header h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    *{
+        width: 100%;
+    }
+
+    
+}
+
+/* tablets  */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+/* laptops  */
+@media screen and (min-width: 769) and (max-width: 1024){
+    
+}
+
+/* desktops  */
+@media screen and (min-width: 1025) and (max-width: 1200px){
+    
+}
+
+/* x-large like a TV */
+@media screen and (min-width: 1201px){
+    
+}
