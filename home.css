@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* nav bar start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+.homelink {
+    background-color: rgba(0, 0, 128, 0.643);
+}
+
+.explorelink {
+    background-color: steelblue;
+}
+
+.adoptlink {
+    background-color: lightblue;
+}
+
+.donatelink {
+    background-color: coral;
+}
+
+.helplink {
+    background-color: gold;
+}
+
+.homelink:hover , .explorelink:hover , .adoptlink:hover , .donatelink:hover , .helplink:hover {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+/* nav bar end */
+
+main {
+    padding-top: 50px;
+}
+
+/* title/hero img */
+h1 {
+    background-image: url(home_img/bamboo.jpeg);
+    text-align: center;
+    font-size: 100px;
+    height: 300px;
+    line-height: 3;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+/* content start */
+.content {
+    background-color: black;
+    display: flex;
+}
+
+.contentimg {
+    height: 400px;
+}
+
+.contenttext {
+    display: block;
+    margin: auto;
+}
+
+.contentHeader , .contentDesc {
+    color: white;
+    text-align: center;
+    padding: 3%;
+}
+
+.contentDesc {
+    font-size: 20px;
+}
+
+/* cards start */
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: black;
+    margin: 5%;
+}
+
+.cardIMG {
+    width: 100%;
+    height: 200px;
+}
+
+.cardText {
+    height: 110px;
+    padding: 5%;
+}
+
+.cardTitle {
+    color: white;
+    text-align: center;
+}
+
+.cardDesc {
+    color: white;
+    text-align: center;
+}
+
+.cardLink {
+    color: white;
+    text-align: center;
+}
+
+.cardLink:hover {
+    text-decoration: underline;
+    color: rgb(26, 126, 26);
+}
+
+/* footer start  */
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+
+.media {
+    width: 40px;
+    height: 40px;
+    padding: 0px 5px;
+}
+
+/* phone screens  */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    
+}
+
+/* tablets  */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+/* laptops  */
+@media screen and (min-width: 769) and (max-width: 1024){
+    
+}
+
+/* desktops  */
+@media screen and (min-width: 1025) and (max-width: 1200px){
+    
+}
+
+/* x-large like a TV */
+@media screen and (min-width: 1201px){
+    
+}
