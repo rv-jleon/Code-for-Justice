@@ -1,0 +1,138 @@
+* { box-sizing: border-box; }
+body {
+  background: white;
+  font-family: arial;
+}
+.donations {
+  position: absolute;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 2em;
+  max-width: 400px;
+  margin: 10em auto;
+  background:white;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center
+}
+.donations__progress-bar {
+  background: orange;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3D(-100%, 0, 0);
+  width: 100%;
+  transition: transform 500ms ease;
+}
+.donations__progress {
+  text-align: center;
+}
+.donations__text {
+  margin-bottom: 100px;
+  line-height: 1.5em;
+}
+.donations__donors {
+  font-weight: bold;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  font-style:white;
+}
+.donations__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+}
+.donations__input,
+.donations__submit,
+.donations__reset {
+  font-size: inherit;
+  border: none;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  width: 45%;
+  min-width: 100px;
+  margin-bottom: 1em;
+}
+.donations__submit {
+  background: #1CBC2C;
+  color: white;
+}
+.donations__reset {
+  color: white;
+  flex-grow: 1
+}
+.donations__input {
+  border: 1px solid #eee;
+  padding-left: 1em;
+}
+.donations__input-icon {
+  position: absolute;
+  color: gray;
+  line-height: 1.3;
+  padding: 0.5em 0.3em;
+  pointer-events: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+ul {
+  display: flex;
+}
+li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  padding: 0px 10px;
+}
+.homelink {
+  background-color: rgba(0, 0, 128, 0.643);
+}
+.explorelink {
+  background-color: steelblue;
+}
+.adoptlink {
+  background-color: lightblue;
+}
+.donatelink {
+  background-color: coral;
+}
+.helplink {
+  background-color: gold;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+.media {
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px;
+}
