@@ -12,14 +12,16 @@ nav {
     height: 50px;
     background-color: white;
 }
+
 .logo {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
+
 ul {
     display: flex;
 }
+
 li {
     display: inline-flex;
     justify-content: center;
@@ -28,30 +30,44 @@ li {
     height: 50px;
     padding: 0px 10px;
 }
+
 .homelink {
     background-color: rgba(0, 0, 128, 0.643);
 }
+
 .explorelink {
     background-color: steelblue;
 }
+
 .adoptlink {
     background-color: lightblue;
 }
+
 .donatelink {
     background-color: coral;
 }
+
 .helplink {
     background-color: gold;
 }
+
+.homelink:hover , .explorelink:hover , .adoptlink:hover , .donatelink:hover , .helplink:hover {
+    background-color: black;
+}
+
 a {
     text-decoration: none;
     color: black;
     font-size: large;
 }
+
 a:hover {
     text-decoration: underline;
+    color: white;
 }
 /* nav bar end */
+
+
 /* Title */
 header h1 {
     text-align: center;
