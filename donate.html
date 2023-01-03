@@ -1,71 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
-    <link href="donate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="donate.css" type="text/css">
 </head>
-
-<body>
-  <!-- navbar -->
-  <nav>
-    <!-- logo -->
-    <a href="home.html"><img class="logo" src="home_img/elephant_logo.png"></a>
-
-    <ul>
+<nav>
+  <!-- hero image -->
+  <a href="helpimages/elephant_logo.png"><img class="logo" src="helpimages/elephant_logo.png"></a>
+  <ul>
       <!-- home page link -->
-      <a href="home.html"><li class="homelink">Home</li></a>
-
-      <!-- explore page link -->
-      <a href="explore.html"><li class="explorelink">Explore</li></a>
-
-      <!-- adoption page link -->
-      <a href="adopt.html"><li class="adoptlink">Adopt!</li></a>
-
-      <!-- donation page link -->
-      <a href="donate.html"><li class="donatelink">Donate</li></a>
-
-      <!-- help page link -->
-      <a href="help.html"><li class="helplink">Help</li></a>
-    </ul>
-  </nav>
-
-  <main>
-    <form>
-      <input type="radio" id="5" name="fav_language" value="small">
-      <label for="5">$5.00</label><br>
-
-      <input type="radio" id="10" name="fav_language" value="medium">
-      <label for="10">$10.00</label><br>
-
-      <input type="radio" id="20" name="fav_language" value="large">
-      <label for="20">$20.00</label><br>
-      
-      <input type="submit" value="Submit">
-
+      <li class="homelink"><a href="home.html">Home</a></li>
+      <!-- statistics page link -->
+      <li class="explorelink"><a href="explore.html">Explore</a></li>
+      <!-- form page link -->
+      <li class="adoptlink"><a href="adopt.html">Adopt!</a></li>
+      <!-- solutions page link -->
+      <li class="donatelink"><a href="donate.html">Donate</a></li>
+      <!-- contact page link -->
+      <li class="helplink"><a href="help.html">Help</a></li>
+  </ul>
+</nav>
+<div class="donations">
+    <div class="donations__progress-bar"></div>
+    <h2 class="donations__progress">
+      $<span class="donations__amount">0</span> / $500</h2>
+    <div class="donations__text">
+      Join the
+      <span class="donations__donors">20,000</span>
+      other donors who have already supported this project.
+    </div>
+    <form class="donations__form">
+      <span class="donations__input-icon">$</span>
+      <input class="donations__input" type="number" value="50" title="$"/>
+      <input type="submit" class="donations__submit" />
+      <button class="donations__reset">Reset</button>
     </form>
-  </main>
-   
-
-  <!-- <footer>
-    <a href="https://www.facebook.com/" target="_blank">
-      <img src="home_img/facebooklogo.png" alt="facebook logo" class="media">
-    </a>
-    
-    <a href="https://www.tiktok.com/" target="_blank">
-      <img src="home_img/tiktok.png" alt="tiktok logo" class="media">
-    </a>
-    
-    <a href="https://www.twitter.com/" target="_blank">
-      <img src="home_img/twitterlogo2.png" alt="twitter logo" class="media">
-    </a>
-    
-    <a href="https://www.instagram.com/" target="_blank">
-      <img src="home_img/instagramlogo5.png" alt="instagram logo" class="media">
-    </a>
-  </footer> -->
-
-</body>
-</html>
+  </div>
+  <div>
+    <footer>
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="helpimages/facebooklogo.png" alt="facebook logo" class="media">
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank">
+          <img src="helpimages/tiktok.png" alt="tiktok logo" class="media">
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+          <img src="helpimages/twitterlogo2.png" alt="twitter logo" class="media">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="helpimages/instagramlogo5.png" alt="instagram logo" class="media">
+      </a>
+  </footer>
+  </div>
