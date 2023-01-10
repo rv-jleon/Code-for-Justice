@@ -82,6 +82,7 @@ header h1 {
     background: url(adoptImages/heroadopt.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    
 
    
 }
@@ -110,6 +111,7 @@ header h1 {
     font-size: 1.5em ;
     margin-left: 10%;
     margin-right: 10%;
+    color: white;
 }
 
 .content button {
@@ -165,7 +167,6 @@ header h1 {
   /*   background-color: black; */
       height: fit-content;
       border-radius: 1px;
-      overflow: hidden;
       text-align: center;
       box-sizing: border-box;
       border: 2px solid black;
@@ -174,10 +175,15 @@ header h1 {
     margin: auto;
   }
 
-  .adopttext{
+  .gitem{
+    max-width: fit-content;
+    display: block;
+  }
+
+  /* .group{
     display: block;
    box-sizing: border-box;
-  }
+  } */
 
   /* footer start  */
 
@@ -193,23 +199,25 @@ footer {
 }
 
 .media {
-    width: 40px;
-    height: 40px;
-    align-items: center;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+ 
 }
 
 /* phone screens  */
 @media screen and (min-width: 320px) and (max-width: 480px){
     
+    
 }
 
 /* tablets  */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 768px){
     
 }
 
 /* laptops  */
-@media screen and (min-width: 769) and (max-width: 1020){
+@media screen and (min-width: 768) and (max-width: 1024){
     
 }
 
@@ -218,7 +226,4 @@ footer {
     
 }
 
-/* x-large like a TV */
-@media screen and (min-width: 1201px){
 
-}
