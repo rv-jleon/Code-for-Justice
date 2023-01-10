@@ -95,7 +95,7 @@ h1 {
 }
 
 .contentimg {
-    height: 400px;
+    width: 50%;
 }
 
 .contenttext {
@@ -179,27 +179,33 @@ footer {
     * {
         overflow-x: hidden;
     }
-/* navbar */
+
+    /* navbar */
     nav {
         display: flex;
         justify-content: center;
         position: relative;
+        width: 100%;
+        height: 50px;
     }
 
     .logo {
         display: none;
     }
-/* main  */
+
+    /* main  */
     main {
         padding-top: 0;
     }
-/* hero */
+
+    /* hero */
     h1 {
         font-size: 50px;
         height: 200px;
         line-height: 2;
     }
-/* main content */
+
+    /* main content */
     .content {
         display: flex;
         flex-direction: column;
@@ -213,16 +219,19 @@ footer {
     .contentHeader {
         font-size: 20px;
     }
+
     .contentDesc {
         font-size: 15px;
     }
-/* card content  */
+
+    /* card content  */
     .cardContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .cardTitle , .cardDesc {
+    .cardTitle,
+    .cardDesc {
         font-size: small;
     }
 
@@ -236,22 +245,62 @@ footer {
     * {
         overflow-x: hidden;
     }
+
     /* navbar */
     nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px
     }
 
     .logo {
-        display: none;
+        height: 50px;
+    }
+
+    /* hero  */
+    h1 {
+        font-size: 50px;
+        height: 200px;
+        line-height: 4;
+    }
+
+    /* main content */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentimg {
+        width: 100%;
+        height: 50%;
+    }
+
+    .contentHeader {
+        font-size: 20px;
+    }
+
+    .contentDesc {
+        font-size: 15px;
+    }
+
+    /* card content  */
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardTitle,
+    .cardDesc {
+        font-size: small;
+    }
+
+    .cardLink {
+        font-size: medium;
     }
 }
 
-/* laptops  */
-@media screen and (min-width: 769) and (max-width: 1024) {}
+/* laptop and bigger  */
+@media screen and (min-width: 481px) and (max-width: 1129) {
 
-/* desktops  */
-@media screen and (min-width: 1025) and (max-width: 1200px) {}
-
-/* x-large like a TV */
-@media screen and (min-width: 1201px) {}
+}
