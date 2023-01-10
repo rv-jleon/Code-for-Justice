@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* nav bar start */
@@ -52,7 +52,11 @@ li {
     background-color: gold;
 }
 
-.homelink:hover , .explorelink:hover , .adoptlink:hover , .donatelink:hover , .helplink:hover {
+.homelink:hover,
+.explorelink:hover,
+.adoptlink:hover,
+.donatelink:hover,
+.helplink:hover {
     background-color: black;
 }
 
@@ -66,6 +70,7 @@ a:hover {
     text-decoration: underline;
     color: white;
 }
+
 /* nav bar end */
 
 main {
@@ -98,7 +103,8 @@ h1 {
     margin: auto;
 }
 
-.contentHeader , .contentDesc {
+.contentHeader,
+.contentDesc {
     color: white;
     text-align: center;
     padding: 3%;
@@ -169,26 +175,83 @@ footer {
 }
 
 /* phone screens  */
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    * {
+        overflow-x: hidden;
+    }
+/* navbar */
+    nav {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
+    .logo {
+        display: none;
+    }
+/* main  */
+    main {
+        padding-top: 0;
+    }
+/* hero */
+    h1 {
+        font-size: 50px;
+        height: 200px;
+        line-height: 2;
+    }
+/* main content */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentimg {
+        width: 100%;
+        height: 50%;
+    }
+
+    .contentHeader {
+        font-size: 20px;
+    }
+    .contentDesc {
+        font-size: 15px;
+    }
+/* card content  */
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardTitle , .cardDesc {
+        font-size: small;
+    }
+
+    .cardLink {
+        font-size: medium;
+    }
 }
 
 /* tablets  */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* navbar */
+    nav {
+        display: flex;
+        justify-content: center;
+    }
 
+    .logo {
+        display: none;
+    }
 }
 
 /* laptops  */
-@media screen and (min-width: 769) and (max-width: 1024){
-
-}
+@media screen and (min-width: 769) and (max-width: 1024) {}
 
 /* desktops  */
-@media screen and (min-width: 1025) and (max-width: 1200px){
-
-}
+@media screen and (min-width: 1025) and (max-width: 1200px) {}
 
 /* x-large like a TV */
-@media screen and (min-width: 1201px){
-
-}
+@media screen and (min-width: 1201px) {}
