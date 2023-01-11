@@ -30,7 +30,6 @@ li {
     list-style: none;
     height: 50px;
     padding: 0px 10px;
-
 }
 
 .homelink {
@@ -136,6 +135,7 @@ header h1 {
     background-color: black;
     height: 450px;
 }
+
 .animaltext :hover {
     color: rgb(140, 215, 148);
     opacity: 1;
