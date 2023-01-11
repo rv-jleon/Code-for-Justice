@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -10,8 +15,8 @@ nav {
 }
 .logo {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 ul {
   display: flex;
@@ -118,3 +123,4 @@ footer {
     width: 100%;
     display: block;
   }
+}
