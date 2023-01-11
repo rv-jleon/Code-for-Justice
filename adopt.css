@@ -83,9 +83,6 @@ header h1 {
     background: url(adoptImages/heroadopt.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    
-
-   
 }
 
  .content-area {
@@ -204,13 +201,65 @@ footer {
 /* phone screens  */
 /* @media screen and (min-width: 320px) and (max-width: 480px){
 } */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    * {
-        overflow-x: hidden;
+@media screen and (min-width: 375px) and (max-width: 480px) 
+     {
+        .banner-area {
+            padding: 10px;
+            width: 100%;
+        }
+        .animals img{
+            height: auto;
+            width: 100%;
+
+        }
+        .media {
+            height: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+        
+        }
+        .content h1{
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            display: inline-block;
+            text-shadow: 3px 3px rgb(255, 255, 255);
+        }
+        
+        .content p{
+            font-size: 15px ;
+            margin-left: 10%;
+            margin-right: 10%;
+            color: black;
+        }
+        
+        .content-area {
+            display: fixed;
+            height: 100%;
+            bottom: 20px;
+            left: 200px;
+            margin-left: 10px;
+            margin-top: 10px;
+            text-align: center;
+        
+        }
+        header h1 {
+            text-align: center;
+            font-size: 80px;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+        li {
+            padding: 0px 5px;
+        }
+     
     }
-}
+
 /* tablets  */
 @media screen and (min-width: 480px) and (max-width: 768px){
+  
     
 }
 
@@ -223,5 +272,3 @@ footer {
 @media screen and (min-width: 1025) and (max-width: 1200px){
     
 }
-
-
