@@ -15,8 +15,8 @@ nav {
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 ul {
@@ -30,7 +30,7 @@ li {
     list-style: none;
     height: 50px;
     padding: 0px 10px;
-    
+
 }
 
 .homelink {
@@ -88,19 +88,18 @@ header h1 {
     background: url(explore-images/Cute_Panda.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-
-   
+    overflow: hidden;
 }
 
  .content-area {
     display: fixed;
-    height: 100%;
+    height: 100vh;
     bottom: 20px;
     left: 200px;
     margin-left: 750px;
     margin-top: 230px;
     text-align: center;
-
+    overflow: hidden;
 }
 
 .content h1{
@@ -135,6 +134,7 @@ header h1 {
 .animals {
     display: flex;
     background-color: black;
+    height: 450px;
 }
 .animaltext :hover {
     color: rgb(140, 215, 148);
@@ -151,10 +151,6 @@ header h1 {
 .animals img{
     height: 450px;
 }
-
-/* .animalHeader {
-    text-align: center;
-} */
 
 .animalInfo {
     font-size: 20px;
@@ -179,39 +175,289 @@ footer {
     height: 40px;
     padding: 0px 5px;
 }
-
-/* Responsive design */
-
-/* phone screens  */
-@media screen and (min-width: 320px) and (max-width: 480px){
+/* ------- Responsive design ------- */
+/* ------- phone screens --------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+* {
+    overflow-x: hidden;
+}
+/* nav bar start */
+nav {
+    justify-content: space-around;
+    position: absolute;
+}
+.logo {
+   display: none;
+}
+a {
+    font-size: medium;
+}
+/* Title */
+header h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+/* Hero Image */
+.banner-area {
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    background: url(explore-images/Cute_Panda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+ .content-area {
+    display: fixed;
+    height: 100%;
+    bottom: 20px;
+    left: 200px;
+    margin-left: 5px;
+    margin-top: 100px;
+    text-align: center;
+}
+.content h1{
+    font-size: 25px;
+}
+.content p{
+    font-size: 1em ;
+    margin-left: 10%;
+    margin-right: 10%;
+   background-color: rgb(255, 255, 255, 0.7);
+}
+.content button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 2%;
+    font-size: large;
+}
+/* Animal Content */
+.animals {
+    display: inline-block;
+    text-align: center;
+    /* position: relative; */
+}
+.animaltext {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.animals img{
+    height: 200px;
+    width: 200px;
+}
+.animalInfo {
+    font-size: 12px;
+    padding: 20px;
+}
+}
+/* ---------- tablets ----------- */
+@media screen and (min-width: 481px) and (max-width: 768px){
+* {
+    overflow-x: hidden;
+}
+/* nav bar start */
+nav {
+    justify-content: space-around;
+    position: absolute;
+    justify-content: center;
+}
+.logo {
+   display: none;
+}
+a {
+    font-size: medium;
+}
+/* Title */
+header h1 {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 60px;
+}
+/* Hero Image */
+.banner-area {
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    background: url(explore-images/Cute_Panda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+ .content-area {
+    display: fixed;
+    height: 100%;
+    bottom: 20px;
+    left: 200px;
+    margin-left: 5px;
+    margin-top: 100px;
+    text-align: center;
+}
+.content h1{
+    font-size: 35px;
+}
+.content p{
+    font-size: 1.5em ;
+    margin-left: 10%;
+    margin-right: 10%;
+   background-color: rgb(255, 255, 255, 0.7);
+}
+/* Animal Content */
+.animals {
+    display: inline-block;
+    text-align: center;
+    /* position: relative; */
+}
+.animaltext {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.animals img{
+    height: 250px;
+    width: 250px;
+}
+.animalInfo {
+    font-size: 15px;
+    padding: 20px;
+}
+}
+/*-------- laptops -------  */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    * {
+        overflow-x: hidden;
+    }
+    /* nav bar start */
+    /* nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+     */
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    /* Title */
     header h1 {
         text-align: center;
-        font-size: 40px;
-        padding-top: 100px;
+        font-size: 45px;
+        padding-top: 60px;
     }
-    * {
+    /* Hero Image */
+    .banner-area {
+        padding: 10px;
         width: 100%;
+        height: 400px;
+        background: url(explore-images/Cute_Panda.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
     }
-   
-    
+     .content-area {
+        display: fixed;
+        height: 100%;
+        bottom: 20px;
+        left: 200px;
+        margin-left: 5px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 35px;
+    }
+    .content p{
+        font-size: 1.5em ;
+        margin-left: 10%;
+        margin-right: 10%;
+       background-color: rgb(255, 255, 255, 0.7);
+    }
+    /* Animal Content */
+    .animals {
+        display: inline-block;
+        text-align: center;
+        /* position: relative; */
+    }
+    .animaltext {
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .animals img{
+        height: 250px;
+        width: 250px;
+    }
+    .animalInfo {
+        font-size: 18px;
+        padding: 20px;
+    }
 }
-
-/* tablets  */
-@media screen and (min-width: 481px) and (max-width: 768px){
-    
-}
-
-/* laptops  */
-@media screen and (min-width: 769) and (max-width: 1024){
-    
-}
-
-/* desktops  */
-@media screen and (min-width: 1025) and (max-width: 1200px){
-    
-}
-
-/* x-large like a TV */
-@media screen and (min-width: 1201px){
-    
+/*------ desktops ------*/
+@media screen and (min-width: 1025px) and (max-width: 1205px){
+    * {
+        overflow-x: hidden;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    /* Title */
+    header h1 {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 60px;
+    }
+    /* Hero Image */
+    .banner-area {
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        background: url(explore-images/Cute_Panda.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+     .content-area {
+        display: fixed;
+        height: 100%;
+        bottom: 20px;
+        left: 200px;
+        margin-left: 5px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 35px;
+    }
+    .content p{
+        font-size: 1.5em ;
+        margin-left: 10%;
+        margin-right: 10%;
+       background-color: rgb(255, 255, 255, 0.7);
+    }
+    /* Animal Content */
+    .animals {
+        display: inline-block;
+        text-align: center;
+        /* position: relative; */
+    }
+    .animaltext {
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .animals img{
+        height: 300px;
+        width: 300px;
+    }
+    .animalInfo {
+        font-size: 20px;
+        padding: 20px;
+    }
 }
