@@ -228,16 +228,16 @@ footer {
     /* card content  */
     .cardContainer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .cardTitle,
     .cardDesc {
-        font-size: small;
+        font-size: medium;
     }
 
     .cardLink {
-        font-size: medium;
+        font-size: large;
     }
 }
 
@@ -303,11 +303,41 @@ footer {
 
 /* laptop and bigger  */
 @media screen and (min-width: 769px) and (max-width: 810px) {
+    /* hero  */
     h1 {
         font-size: 75px;
         height: 200px;
         line-height: 3;
     }
+        /* card content  */
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardTitle,
+    .cardDesc {
+        font-size: large;
+    }
+
+    .cardLink {
+        font-size: x-large;
+    }
 }
 
-/* 1144 */
+@media screen and (min-width: 811px) and (max-width: 1144px) {
+        /* card content  */
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardTitle,
+    .cardDesc {
+        font-size: large;
+    }
+
+    .cardLink {
+        font-size: x-large;
+    }
+}
