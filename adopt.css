@@ -201,8 +201,7 @@ footer {
 /* phone screens  */
 /* @media screen and (min-width: 320px) and (max-width: 480px){
 } */
-@media screen and (min-width: 375px) and (max-width: 480px) 
-     {
+@media screen and (min-width: 375px) and (max-width: 480px) {
         .banner-area {
             padding: 10px;
             width: 100%;
@@ -258,13 +257,12 @@ footer {
     }
 
 /* tablets  */
-@media screen and (min-width: 480px) and (max-width: 768px){
-  
-    
+@media screen and (min-width: 481px) and (max-width: 768px){
+
 }
 
 /* laptops  */
-@media screen and (min-width: 768) and (max-width: 1024){
+@media screen and (min-width: 769) and (max-width: 1024){
     
 }
 
